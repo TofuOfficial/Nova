@@ -2,8 +2,8 @@
 
 #include "Core.h"
 
-namespace Nova {
-
+namespace Nova
+{
 	class NOVA_API Application
 	{
 	public:

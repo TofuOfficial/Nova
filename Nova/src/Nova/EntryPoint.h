@@ -6,6 +6,10 @@ extern Nova::Application* Nova::CreateApplication();
 
 int main(int argc, char** argv)
 {
+	Nova::Log::Init();
+
+	NOVA_TRACE("Sandbox Initialized");
+
 	auto app = Nova::CreateApplication();
 	app->Run();
 	delete app;

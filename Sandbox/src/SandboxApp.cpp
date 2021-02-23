@@ -3,11 +3,13 @@
 class Sandbox : public Nova::Application
 {
 public:
-	Sandbox() {
+	Sandbox()
+	{
 
 	}
 
-	~Sandbox() {
+	~Sandbox()
+	{
 
 	}
 };

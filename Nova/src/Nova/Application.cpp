@@ -1,17 +1,19 @@
 #include "Application.h"
 
-namespace Nova {
-
-	Application::Application() {
-
-	}
-
-	Application::~Application() {
+namespace Nova
+{
+	Application::Application()
+	{
 
 	}
 
-	void Application::Run() {
+	Application::~Application()
+	{
+
+	}
+
+	void Application::Run()
+	{
 		while (true);
 	}
-
 }
