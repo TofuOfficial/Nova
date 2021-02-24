@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Nova/Core.h"
+#include "Nova/Core/Core.h"
 
 #include <string>
 #include <functional>

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Core.h"
-#include "Events/Event.h"
+#include "Nova/Core/Core.h"
+#include "Nova/Events/Event.h"
 
 namespace Nova
 {

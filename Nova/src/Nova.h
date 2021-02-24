@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Nova\Application.h"
+#include "Nova/Core/Application.h"
 
-#include "Nova\Log.h"
+#include "Nova/Core/Log.h"
 
-#include "Nova\EntryPoint.h"
+#include "Nova/Core/EntryPoint.h"

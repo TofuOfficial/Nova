@@ -1,8 +1,8 @@
 #include "nvpch.h"
-#include "Application.h"
 
+#include "Nova/Core/Application.h"
 #include "Events/ApplicationEvent.h"
-#include "Nova/Log.h"
+#include "Nova/Core/Log.h"
 
 namespace Nova
 {

@@ -1,7 +1,9 @@
 #pragma once
 
-#include "Core.h"
+#include "Nova/Core/Core.h"
 #include "spdlog/spdlog.h"
+
+// including ostr.h allows us to log classes
 #include "spdlog/fmt/ostr.h"
 
 namespace Nova

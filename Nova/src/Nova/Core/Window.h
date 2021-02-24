@@ -2,7 +2,7 @@
 
 #include "nvpch.h"
 
-#include "Nova/Core.h"
+#include "Nova/Core/Core.h"
 #include "Nova/Events/Event.h"
 
 namespace Nova
