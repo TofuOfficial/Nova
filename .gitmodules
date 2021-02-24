@@ -4,3 +4,6 @@
 [submodule "Nova/vendor/spdlog/spdlog"]
 	path = Nova/vendor/spdlog/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "glfw"]
+	path = glfw
+	url = https://github.com/TheCherno/glfw

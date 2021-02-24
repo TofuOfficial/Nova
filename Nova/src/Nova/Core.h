@@ -7,3 +7,5 @@
 		#define NOVA_API __declspec(dllimport)
 	#endif // NOVA_BUILD_DLL
 #endif // NOVA_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

@@ -8,7 +8,7 @@ int main(int argc, char** argv)
 {
 	Nova::Log::Init();
 
-	NOVA_TRACE("Sandbox Initialized");
+	NOVA_CORE_TRACE("Sandbox Initialized");
 
 	auto app = Nova::CreateApplication();
 	app->Run();
