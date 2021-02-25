@@ -15,9 +15,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Nova/vendor/GLFW/include"
 IncludeDir["Glad"] = "Nova/vendor/Glad/include"
+IncludeDir["ImGui"] = "Nova/vendor/imgui/include"
 
 include "Nova/vendor/GLFW"
 include "Nova/vendor/Glad"
+include "Nova/vendor/ImGui"
 
 project "Nova"
 	location "Nova"
@@ -41,13 +43,15 @@ project "Nova"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}",
 	}
 
 	links
 	{
 		"GLFW",
 		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 
@@ -72,14 +76,17 @@ project "Nova"
 	filter "configurations:Debug"
 		defines "NOVA_DEBUG"
 		symbols "On"
+		buildoptions "/MDd"
 
 	filter "configurations:Release"
 		defines "NOVA_RELEASE"
 		optimize "On"
+		buildoptions "/MDd"
 
 	filter "configurations:Dist"
 		defines "NOVA_DIST"
 		optimize "On"
+		buildoptions "/MDd"
 
 project "Sandbox"
 	location "Nova"
@@ -119,11 +126,14 @@ project "Sandbox"
 	filter "configurations:Debug"
 		defines "NOVA_DEBUG"
 		symbols "On"
+		buildoptions "/MDd"
 
 	filter "configurations:Release"
 		defines "NOVA_RELEASE"
 		optimize "On"
+		buildoptions "/MDd"
 
 	filter "configurations:Dist"
 		defines "NOVA_DIST"
 		optimize "On"
+		buildoptions "/MDd"

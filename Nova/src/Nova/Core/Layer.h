@@ -9,7 +9,7 @@ namespace Nova
 	class NOVA_API Layer
 	{
 	public:
-		Layer(const std::string & = "Layer");
+		Layer(const std::string& = "Layer");
 		virtual ~Layer();
 
 		virtual void OnAttach() {}

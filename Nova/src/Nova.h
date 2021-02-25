@@ -2,6 +2,8 @@
 
 #include "Nova/Core/Application.h"
 
+#include "Nova/Core/Layer.h"
+
 #include "Nova/Core/Log.h"
 
 #include "Nova/Core/EntryPoint.h"
