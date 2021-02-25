@@ -55,7 +55,8 @@ project "Nova"
 		defines
 		{
 			"NOVA_PLATFORM_WINDOWS",
-			"NOVA_BUILD_DLL"
+			"NOVA_BUILD_DLL",
+			"NOVA_ENABLE_ASSERTS"
 		}
 
 		postbuildcommands

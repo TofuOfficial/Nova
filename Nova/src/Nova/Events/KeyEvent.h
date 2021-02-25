@@ -41,6 +41,7 @@ namespace Nova {
 
 	class NOVA_API KeyReleasedEvent : public KeyEvent
 	{
+	public:
 		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {}
 
