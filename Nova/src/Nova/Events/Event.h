@@ -5,7 +5,8 @@
 #include <string>
 #include <functional>
 
-namespace Nova {
+namespace Nova
+{
 
 	enum class EventType
 	{

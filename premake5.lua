@@ -14,8 +14,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Nova/vendor/GLFW/include"
+IncludeDir["Glad"] = "Nova/vendor/Glad/include"
 
 include "Nova/vendor/GLFW"
+include "Nova/vendor/Glad"
 
 project "Nova"
 	location "Nova"
@@ -38,12 +40,14 @@ project "Nova"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -56,7 +60,8 @@ project "Nova"
 		{
 			"NOVA_PLATFORM_WINDOWS",
 			"NOVA_BUILD_DLL",
-			"NOVA_ENABLE_ASSERTS"
+			"NOVA_ENABLE_ASSERTS",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

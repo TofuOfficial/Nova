@@ -8,6 +8,7 @@
 
 namespace Nova
 {
+
 	class NOVA_API Application
 	{
 	public:
@@ -24,4 +25,5 @@ namespace Nova
 		bool m_Running = true;
 	};
 	Application* CreateApplication();
+
 }

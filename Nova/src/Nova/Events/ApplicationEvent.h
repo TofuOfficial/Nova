@@ -4,7 +4,8 @@
 
 #include <sstream>
 
-namespace Nova {
+namespace Nova
+{
 
 	class NOVA_API WindowResizeEvent : public Event
 	{
@@ -36,4 +37,5 @@ namespace Nova {
 		EVENT_CLASS_TYPE(WindowClose)
 			EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
+
 }

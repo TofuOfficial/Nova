@@ -5,9 +5,16 @@
 #include "Nova/Events/MouseEvent.h"
 #include "Nova/Events/KeyEvent.h"
 
+#include <glad/glad.h>
+
 namespace Nova
 {
 	static bool s_GLFWInitialized = false;
+
+	static void GLFWErrorCallback(int error, const char* description)
+	{
+		NOVA_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
+	}
 
 	Window* Window::Create(const WindowProps& props)
 	{
@@ -42,6 +49,8 @@ namespace Nova
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		NOVA_ASSERT(status, "Failed to initialize glad");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
