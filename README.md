@@ -1,3 +1,4 @@
+<img src="branding/Logo.png" width=150>
 
 # Nova
 A bare bones game engine.
