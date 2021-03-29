@@ -7,3 +7,6 @@
 [submodule "glfw"]
 	path = glfw
 	url = https://github.com/TheCherno/glfw
+[submodule "Nova/vendor/imgui"]
+	path = Nova/vendor/imgui
+	url = https://github.com/ocornut/imgui
